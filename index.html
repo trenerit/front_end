@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formularz</title>
+</head>
+<body>
+    <div class="box">
+        <div class="przeslona"></div>
+        <div id="resultPlace"></div>
+          <form action="" method="post">
+              <label for="mail">Twój e-mail:</label>
+              <input name="mail" id="mail" autofocus>
+              <label for="subject">Temat wiadomości:</label>
+              <input name="subject" id="subject">
+              <label for="message">Treść wiadomości:</label>
+              <textarea name="message" id="message" cols="15" rows="5"></textarea>
+              <label></label>
+              <!-- siteKey testowy dla localhost! -->
+              <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" data-theme="dark"></div>
+              <button type="submit">Wyślij</button>
+          </form>
+    </div>
+    <script src="js/contact.js"></script>
+</body>
+</html>
